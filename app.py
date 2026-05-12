@@ -1,10 +1,10 @@
-from core_imports import *
-from config import *
-import state
-from data import load_presence_curves, fetch_weather, fetch_maritime, load_scb, fetch_osm, load_ais
-from scoring import build_scored_grid
-from physics import compute_integrated_debris_risk
-from server import Handler
+from core.core_imports import *
+from core.config import *
+from core import state
+from data_processing.data import load_presence_curves, fetch_weather, fetch_maritime, load_scb, fetch_osm, load_ais
+from engine.scoring import build_scored_grid
+from engine.physics import compute_integrated_debris_risk
+from api.server import Handler
 
 if __name__=="__main__":
     PORT=8000
